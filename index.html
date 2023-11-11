@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Шифр цезаря для русского языка</h1>
+            <textarea id="input" placeholder="сюда вводим текст"></textarea>
+            <div class="df-row">
+                <div class="df-row">
+                    <p>Операция:</p>
+                    <select id="operation">
+                        <option value="encrypt">зашифровать</option>
+                        <option value="decipher">расшифровать</option>
+                    </select>
+                </div>
+                <div class="df-row">
+                    <p>Сдвиг:</p>
+                    <input id="steps" value="1" type="number" />
+                </div>
+            </div>
+            <button id="btn">Выполнить операцию</button>
+            <textarea id="output" placeholder="сюда выводится результат" readonly></textarea>
+            <button id="copy">Копировать результат</button>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
